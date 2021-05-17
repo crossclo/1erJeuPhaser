@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>pure javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../logo1.png" type="image/icon type">
+</head>
+<body>
+<header>
+    <div class="container-fluid bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html">Accueil</a>
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">jeux</a>
+                <div class="dropdown-menu">
+                    <a class="nav-link text-dark" href="index.html">Pong</a>
+                    <a class="nav-link text-dark" href="../jeuxcases/jeuDesCases.html">Jeux des cases</a>
+                </div>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+                <a class="nav-link text-white" href="https://github.com/crossclo">mon github</a>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container-fluid pt-3">
+        <div class="row ">
+            <div class="col pl-5 pr-5 border-right">
+                <form name="question" class="w-75 pl-3 pt-3 pb-3">
+                    <p>vitesse de la racket : </p>
+                    <input type="text" name="vracette" value="5"><br>
+                    <input type="button" class="btn btn-secondary" name="start" value="start" onclick="aha()">
+                    <input type="button" class="btn btn-secondary" name="stop" value="stop" onclick="ahb()">
+                </form>
+            </div>
+        <div class="col pl-5 pr-5">
+            <canvas id="myCanvas" width="800" height="480"></canvas>
+        </div>
+            <div class="col pl-5 pr-5 border-left">
+                <p>Coming soon !</p>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col text-center">
+                <button id="lose" class="btn btn-secondary btn-lg btn-block" onclick="aha()" style="display: none">GAME OVER</button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="jeu.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
